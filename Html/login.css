@@ -1,0 +1,142 @@
+/*
+    name:           TBT Application
+    author:			Nizar TAJMOUTI
+    creation:       17/07/2023
+*/
+
+/*-----Body css-----*/
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+    margin-top: 200px;
+    height: calc(100vh - 200px);
+	/* min-height: 100vh; */
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #623f3f, #422a2a, #322020);
+}
+.main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 500px;
+	width: 350px;
+	height: 500px;
+	background: red;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+.login{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.soustitre{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 70px;
+	color: white;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin-top: 50px;
+	font-weight: bold;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #623f3f;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #984c4c;
+}
+.popupLogin{
+	height: 460px;
+    margin-top: 65px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.popupLogin label{
+	color: #984c4c;
+	transform: scale(.6);
+}
+#afficherErreur{
+	display: none;
+	margin-top: 25px;
+	background-color: #f44336;
+	color: white;
+	padding: 1px;
+	text-align: center;
+ } 
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 100px;
+        height: calc(100vh - 100px);
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .login label {
+        font-size: 1.8em;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .popupLogin {
+        height: auto;
+        margin-top: 30px;
+        transform: translateY(-120px);
+    }
+
+    .popupLogin label {
+        transform: scale(0.6);
+    }
+}

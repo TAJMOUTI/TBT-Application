@@ -1,0 +1,26 @@
+﻿# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+#Fichier qui va faire le lien entre l'url rentré et le controlleur utilisé.
+
+#RewriteBase /TBTApplication/
+
+#RewriteCond %{REQUEST_URI} ^/TBTApplication/$
+
+#RewriteRule ^(.*)$ /TBTApplication/Connexion/ [R=301,L]
+# Options -Indexes
+
+DirectoryIndex  Html/login.php
+
+ErrorDocument 404 /Html/page404.php
+RewriteRule ^Connexion/$ Html/login.php [nc,qsa,L]
+#RewriteRule ^Accueil(/|)$ Html/home.php [L]
+#RewriteRule ^AdminPanel(/|)$ Html/administration_overview.php [L]
+#RewriteRule ^Listes(/|)$ Html/config_liste.php [L]
+#RewriteRule ^AdminEdit(/|)$ Html/administration_manage.php [L]
+
+
+
+RewriteRule ^data/(connexion)(/|) Controller/restcontroller.php?type=$1 [nc,qsa]
