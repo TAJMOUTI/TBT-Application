@@ -3,4 +3,4 @@ $_serv_name = gethostname();
 $hostMSQL = "localhost";
 $loginMSQL = "root";
 $passwordMSQL = "";
-$databaseMSQL = "tbtapp";
+$databaseMSQL = "tbtappli";

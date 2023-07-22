@@ -1,0 +1,147 @@
+/* MAIN CONTENT START */
+.container2{
+    background-color: #F7F7F7;
+    width: 80vw;
+    height: 100vh;
+  }
+  
+  .main_page{
+    background-color: #F7F7F7;
+    padding: 0 20px;
+    height: 90%;
+  }
+  
+  /* MAIN CONTENT END */
+  
+  /*MAIN BOX START*/
+  .container3{
+    display: flex;
+    position: relative;
+    top: 50px;
+  }
+  
+  
+  .h1_box{
+    color:#422a2a;
+  }
+  
+  .box_main{
+    position: relative;
+    width: 100%;
+    /* height: 80vh; */
+    background-color: #fff;
+    border-radius: 10px;
+    /*box shadow on all sides*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .text_h1{
+    padding: 10px;
+    padding-left: 20px;
+    color: #422a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  td{
+    color: black; 
+  }
+  .no_padding{
+    padding: unset;
+}
+  .center{
+    text-align: center;
+}
+  
+  #tableau, #tableau2 {
+    background-color: #f5f5f5 ;
+    width: 100% !important ;
+    /* margin-top: 20px ; */
+  }
+  
+  /*MAIN BOX END*/
+  
+  /*DIV KNOW MORE START*/
+  
+  .text_h1 button {
+    position: relative;
+    text-align: end;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 0px 35px;
+    font-size: 15px;
+    height: 30px;
+    transition: 0.2s;
+  }
+  
+  .text_h1 button:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+  /* OTHER PAGE WHICH USE THIS CSS STYLE*/
+  .container2_add{
+    background-color: #F7F7F7;
+    width: 80vw;
+    height: 1500px;
+  }
+  
+  .backgroundb{
+    background-color: #422a2a !important;
+    color: #F7F7F7;
+    border: none;
+  }
+  
+  .backgroundb td{
+    color: #F7F7F7;
+  }
+  
+  @media only screen and (max-width: 1015px) {
+    /* .navbar_mobile{
+        display: block;
+    }
+    .navbar_top{
+        justify-content: space-between;
+    }
+    #left_menu{
+        display: none;
+        
+    } */
+    .container2, .container2_add{
+        width: 100vw;
+    }
+  }
+  @media screen and (max-height: 830px) {
+    .box_main {
+        position: relative;
+        width: 100%;
+        /* height: 600px; */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+  }
+  @media screen and (max-width: 415px) {
+    /* .navbar_top_right {
+        width: 50px;
+    }
+    .h1_acc{
+        position: none;
+        font-size: 1.7em;
+        margin-top: 10px;
+        text-align: center;
+    } */
+  
+    .container3{
+        top: 30px
+    }
+  
+  }

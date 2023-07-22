@@ -1,24 +1,24 @@
-/*
-    name:           TBT Application
-    author:			Nizar TAJMOUTI
-    creation:       17/07/2023
+/* 
+name:           TBT Application
+author:			Nizar TAJMOUTI
+creation:       22/07/2023
 */
 
 /**
  * @function :ready
  * Fonction au démarrage de l'application
  */
-
 $(document).ready(function() {
     /**
      * Connexion à l'application par l'utilisateur
      */
-     
+     console.log(15,'salut');
     $("#btnConnexion").click(function() {
+     console.log(17,'salut');
 
         $.ajax({
             cache: false,
-            url: "./data/connexion",
+            url: "../data/connexion",
             type: "POST",
             async: false,
             data: ({
@@ -48,7 +48,7 @@ $(document).ready(function() {
                             "showMethod": "fadeIn",
                             "hideMethod": "fadeOut"
                             }
-                        toastr.options.onHidden = function() { document.location.href = "../Accueil/"; }
+                        toastr.options.onHidden = function() { document.location.href = "../Administration/"; }
                         toastr["success"]("Connexion en cours ...");
                         console.log(30, "OK");
                         console.log(57,$response);

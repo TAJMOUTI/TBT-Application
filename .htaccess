@@ -12,15 +12,10 @@ RewriteEngine on
 #RewriteRule ^(.*)$ /TBTApplication/Connexion/ [R=301,L]
 # Options -Indexes
 
-DirectoryIndex  Html/login.php
+DirectoryIndex  html/login.php
 
-ErrorDocument 404 /Html/page404.php
-RewriteRule ^Connexion/$ Html/login.php [nc,qsa,L]
-#RewriteRule ^Accueil(/|)$ Html/home.php [L]
-#RewriteRule ^AdminPanel(/|)$ Html/administration_overview.php [L]
-#RewriteRule ^Listes(/|)$ Html/config_liste.php [L]
-#RewriteRule ^AdminEdit(/|)$ Html/administration_manage.php [L]
+ErrorDocument 404 /html/page404.php
+RewriteRule ^Connexion/$ html/login.php [nc,qsa,L]
+RewriteRule ^Administration/$ html/admin.php [L]
 
-
-
-RewriteRule ^data/(connexion)(/|) Controller/restcontroller.php?type=$1 [nc,qsa]
+RewriteRule ^data/(connexion|verifConnexion|getUsers|getDataUser|deleteUser)(/|) controller/restcontroller.php?type=$1 [nc,qsa]

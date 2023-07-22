@@ -16,7 +16,7 @@ class DBController
 
     function connectDBMSQL()
     {
-        include '../Connection/sqlConn.php';
+        include '../connection/sqlConn.php';
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         $connection = mysqli_connect($hostMSQL, $loginMSQL, $passwordMSQL, $databaseMSQL);
         mysqli_set_charset($connection,"utf8");
